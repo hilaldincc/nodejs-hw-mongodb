@@ -1,15 +1,15 @@
 [
   {
-    "name": "Akçiçek Yılmaz",
+    "name": "Yulia Shevchenko",
     "phoneNumber": "+380000000001",
-    "email": "yılmaz1@example.com",
+    "email": "oleh1@example.com",
     "isFavourite": false,
     "contactType": "personal",
     "createdAt": "2024-05-08T16:12:14.954151",
     "updatedAt": "2024-05-08T16:12:14.954158"
   },
   {
-    "name": "Fatma Kaya",
+    "name": "Dmytro Boyko",
     "phoneNumber": "+380000000002",
     "email": null,
     "isFavourite": false,
@@ -18,16 +18,16 @@
     "updatedAt": "2024-05-08T16:12:14.954164"
   },
   {
-    "name": "Gülüm Demir",
+    "name": "Andriy Pavlenko",
     "phoneNumber": "+380000000003",
-    "email": "demir3@example.com",
+    "email": "dmytro3@example.com",
     "isFavourite": false,
     "contactType": "home",
     "createdAt": "2024-05-08T16:12:14.954168",
     "updatedAt": "2024-05-08T16:12:14.954170"
   },
   {
-    "name": "Güzel Çelik",
+    "name": "Yulia Shevchenko",
     "phoneNumber": "+380000000004",
     "email": null,
     "isFavourite": false,
@@ -36,16 +36,16 @@
     "updatedAt": "2024-05-08T16:12:14.954174"
   },
   {
-    "name": "Hayat Kaplan",
+    "name": "Kateryna Povalenko",
     "phoneNumber": "+380000000005",
-    "email": "kaplan5@example.com",
+    "email": "ivan5@example.com",
     "isFavourite": false,
     "contactType": "personal",
     "createdAt": "2024-05-08T16:12:14.954178",
     "updatedAt": "2024-05-08T16:12:14.954179"
   },
   {
-    "name": "Ceren Şahin",
+    "name": "Anna Kovalenko",
     "phoneNumber": "+380000000006",
     "email": null,
     "isFavourite": false,
@@ -54,16 +54,16 @@
     "updatedAt": "2024-05-08T16:12:14.954184"
   },
   {
-    "name": "Gönül Yıldırım",
+    "name": "Oleh Tkachuk",
     "phoneNumber": "+380000000007",
-    "email": "yıldırım7@example.com",
+    "email": "andriy7@example.com",
     "isFavourite": false,
     "contactType": "personal",
     "createdAt": "2024-05-08T16:12:14.954187",
     "updatedAt": "2024-05-08T16:12:14.954189"
   },
   {
-    "name": "Ergem Öztürk",
+    "name": "Maria Petrenko",
     "phoneNumber": "+380000000008",
     "email": null,
     "isFavourite": false,
@@ -72,16 +72,16 @@
     "updatedAt": "2024-05-08T16:12:14.954198"
   },
   {
-    "name": "Çiğdem Aydın",
+    "name": "Ivan Ivanenko",
     "phoneNumber": "+380000000009",
-    "email": "aydın9@example.com",
+    "email": "vasyl9@example.com",
     "isFavourite": false,
     "contactType": "home",
     "createdAt": "2024-05-08T16:12:14.954203",
     "updatedAt": "2024-05-08T16:12:14.954205"
   },
   {
-    "name": "Erden Özdemir",
+    "name": "Kateryna Kovalchuk",
     "phoneNumber": "+3800000000010",
     "email": null,
     "isFavourite": false,
