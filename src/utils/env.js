@@ -8,5 +8,5 @@ export function getEnvVar(name, defaultValue) {
   if (value) return value;
   if (defaultValue) return defaultValue;
 
-  throw new Error('Environment variable is not set:', name);
+  throw new Error(`Environment variable is not set: ${name}`);
 }
