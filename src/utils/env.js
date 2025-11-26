@@ -1,12 +1,12 @@
 import dotenv from 'dotenv';
+
 dotenv.config();
 
-export function getEnvVar(name, defaultValue = '') {
+export function getEnvVar(name, defaultValue) {
   const value = process.env[name];
 
-  if (value !== undefined && value !== '') {
-    return value;
-  }
+  if (value) return value;
+  if (defaultValue) return defaultValue;
 
-  return defaultValue;
+  throw new Error(`Environment variable is not set: ${name}`);
 }

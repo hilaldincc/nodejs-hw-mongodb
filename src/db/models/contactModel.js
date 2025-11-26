@@ -13,7 +13,7 @@ const contactSchema = new Schema(
     email: {
       type: String,
     },
-    isFavorite: {
+    isFavourite: {
       type: Boolean,
       default: false,
     },
@@ -24,7 +24,7 @@ const contactSchema = new Schema(
       default: 'personal',
     },
   },
-  { timestamps: true, versionKey: false }
+  { timestamps: true, versionKey: false },
 );
 
 export const ContactsCollection = model('contacts', contactSchema);
