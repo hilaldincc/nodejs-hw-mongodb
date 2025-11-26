@@ -12,7 +12,7 @@ export const createContactSchema = Joi.object({
         'Phone number can only contain digits and the characters +, -, (, ), and space.',
     }),
   email: Joi.string().email(),
-  isFavorite: Joi.boolean(),
+  isFavourite: Joi.boolean(),
   contactType: Joi.string().valid('work', 'home', 'personal').required(),
 });
 
@@ -23,6 +23,6 @@ export const updateContactSchema = Joi.object({
     .min(10)
     .max(20),
   email: Joi.string().email(),
-  isFavorite: Joi.boolean(),
+  isFavourite: Joi.boolean(),
   contactType: Joi.string().valid('work', 'home', 'personal'),
 });
