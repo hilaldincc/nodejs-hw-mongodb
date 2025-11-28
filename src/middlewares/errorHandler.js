@@ -1,6 +1,10 @@
 import { HttpError } from 'http-errors';
 
 export const errorHandler = (err, req, res, next) => {
+  console.error('ACTUAL ERROR:', {
+    message: err.message,
+    stack: err.stack,
+  });
   if (err instanceof HttpError) {
     res.status(err.status).json({
       status: err.status,
