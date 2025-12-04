@@ -13,7 +13,7 @@ const contactSchema = new Schema(
     email: {
       type: String,
     },
-    isFavourite: {
+    isFavorite: {
       type: Boolean,
       default: false,
     },
@@ -23,8 +23,13 @@ const contactSchema = new Schema(
       required: true,
       default: 'personal',
     },
+    userId: {
+      type: Schema.Types.ObjectId,
+      ref: 'users',
+      required: true,
+    },
   },
   { timestamps: true, versionKey: false },
 );
 
-export const ContactsCollection = model('contactModel', contactSchema);
+export const ContactsCollection = model('contacts', contactSchema);
