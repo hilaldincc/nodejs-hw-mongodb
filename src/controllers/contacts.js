@@ -12,7 +12,7 @@ import {
 } from '../validation/contacts.js';
 
 export const getAllContactsController = async (req, res, next) => {
-  const contacts = await getAllContacts();
+  const contacts = await getAllContacts(req.query);
 
   res.status(200).json({
     status: 200,
