@@ -9,7 +9,7 @@ import contactsRouter from './routers/contact.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 import { notFoundHandler } from './middlewares/notFoundHandler.js';
 
-const PORT = Number(getEnvVar('PORT', '3000'));
+const PORT = process.env.PORT;
 
 export const setupServer = () => {
   const app = express();
