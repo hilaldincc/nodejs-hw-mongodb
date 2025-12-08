@@ -9,13 +9,13 @@ import contactsRouter from './routers/contact.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 import { notFoundHandler } from './middlewares/notFoundHandler.js';
 
-const PORT = process.env.PORT;
+const PORT = Number(getEnvVar('PORT', '3000'));
 
 export const setupServer = () => {
   const app = express();
 
   app.use(helmet());
-  app.use(cors(corsOptions));
+  app.use(cors({ corsOptions }));
   app.use(pinoHttp({ logger }));
   app.use(express.json());
 
