@@ -28,8 +28,11 @@ const contactSchema = new Schema(
       ref: 'users',
       required: true,
     },
+    photo: {
+      type: String,
+    },
   },
   { timestamps: true, versionKey: false },
 );
 
-export const ContactsCollection = model('contacts', contactSchema);
+export const ContactsCollection = model('contactModel', contactSchema);
