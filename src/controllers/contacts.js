@@ -23,7 +23,6 @@ export const getAllContactsController = async (req, res, next) => {
     sortOrder,
     filter,
   });
-  const contacts = await getAllContacts(req.query);
 
   res.status(200).json({
     status: 200,
