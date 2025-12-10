@@ -1,6 +1,8 @@
-import { ContactsCollection } from '../db/models/contactModel.js';
 import { SORT_ORDER } from '../constants/index.js';
+
+import { ContactsCollection } from '../db/models/contactModel.js';
 import { calculatePaginationData } from '../utils/calculatePaginationData.js';
+
 export const getAllContacts = async ({
   filter = {},
   page = 1,
@@ -8,7 +10,7 @@ export const getAllContacts = async ({
   sortOrder = SORT_ORDER.ASC,
   sortBy = '_id',
   ownerId,
-} = {}) => {
+}) => {
   const skip = (page - 1) * perPage;
 
   const query = { ...filter, userId: ownerId };
@@ -41,15 +43,12 @@ export const getContactById = async (contactId, ownerId) => {
   return contact;
 };
 
-export const createContact = async (payload, ownerId) => {
-  const contact = await ContactsCollection.create({
-    ...payload,
-    userId: ownerId,
-  });
+export const createContact = async (payload) => {
+  const contact = await ContactsCollection.create(payload);
   return contact;
 };
 
-export const updateContact = async (contactId, payload, ownerId) => {
+export const updateContact = async (contactId, ownerId, payload) => {
   const contact = await ContactsCollection.findOneAndUpdate(
     { _id: contactId, userId: ownerId },
     payload,
