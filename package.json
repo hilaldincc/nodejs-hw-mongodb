@@ -13,6 +13,7 @@
   "description": "",
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@redocly/cli": "^2.12.5",
     "eslint": "^9.39.1",
     "globals": "^16.5.0",
     "nodemon": "^3.1.11"
